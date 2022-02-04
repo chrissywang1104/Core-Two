@@ -1,2 +1,0 @@
-# Core-Two
-# Hello, test
