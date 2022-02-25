@@ -1,0 +1,63 @@
+@font-face {
+	font-family:  SignifierRegular;
+	src:  url(../fonts/TestSignifier-Regular.otf);
+}
+
+@font-face {
+	font-family:  SignifierMediumItalic;
+	src:  url(../fonts/TestSignifier-MediumItalic.otf);
+}
+
+@font-face {
+	font-family:  SignifierBold;
+	src:  url(../fonts/TestSignifier-Bold.otf);
+}
+
+body {
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(65,65,65,1) 41%, rgba(18,18,18,1) 100%);
+	text-align: center;
+	margin: 7%;
+}
+
+h1 {
+	font-family: SignifierBold;
+	text-align: center;
+	font-size: 200px;
+	color:  grey;
+
+}
+
+h2 {
+	font-family: SignifierBold;
+	text-align: center;
+	font-size: 80px;
+	color:  grey;
+
+}
+
+p {
+	font-family: SignifierRegular;
+	text-align: center;
+
+}
+
+#italic {
+	font-family:  SignifierMediumItalic;
+}
+
+#bold {
+	font-family: SignifierBold;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: portrait) { 
+
+	Div { position: fixed; } 
+
+}
