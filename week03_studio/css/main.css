@@ -16,14 +16,14 @@
 body {
 	background: rgb(255,255,255);
 	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(65,65,65,1) 41%, rgba(18,18,18,1) 100%);
-	text-align: center;
 	margin: 7%;
+
 }
 
 h1 {
 	font-family: SignifierBold;
 	text-align: center;
-	font-size: 200px;
+	font-size: 150px;
 	color:  grey;
 
 }
@@ -31,15 +31,21 @@ h1 {
 h2 {
 	font-family: SignifierBold;
 	text-align: center;
-	font-size: 80px;
+	font-size: 60px;
 	color:  grey;
 
 }
 
+a:visited {
+	color: grey;
+	background-color: transparent;
+	text-decoration: none;
+  }
+
 p {
 	font-family: SignifierRegular;
-	text-align: center;
-
+	text-align: justify;
+	word-spacing: 0px;
 }
 
 #italic {
@@ -49,6 +55,55 @@ p {
 #bold {
 	font-family: SignifierBold;
 }
+
+body {
+	word-break: break-all;
+}
+
+span {
+	word-break: break-all;
+}
+
+.one {
+	font-size: 47px; line-height: 120%;
+}
+
+.two {
+	font-size: 60px; line-height: 100%;
+}
+
+.three {
+	font-size: 70px; line-height: 90%;
+}
+
+.four {
+	font-size: 90px; line-height: 80%;
+}
+
+.five {
+	font-size: 100px; line-height: 70%;
+}
+
+.six {
+	font-size: 110px;line-height: 60%;
+}
+
+.seven {
+	font-size: 120px; line-height: 50%;
+}
+
+.eight {
+	font-size: 130px; line-height: 40%;
+}
+
+.nine {
+	font-size: 140px; line-height: 30%;
+}
+
+.ten {
+	font-size: 150px; line-height: 20%;
+}
+
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
@@ -61,3 +116,323 @@ p {
 	Div { position: fixed; } 
 
 }
+
+/*@media screen and (max-width:1000px)and (min-width:700px) {
+/*.container, .navbar{
+flex-direction: column;
+font-size: smaller;
+}
+
+.container{
+background-color: darkred
+}
+
+}
+@media screen and (orientation: Landscape) {
+	body{
+	background-color: yellow;
+	}
+	}
+	h2, h1, p{
+	font-size: clamp(var(--min), var(--val) var(--max))
+	}
+	h1{
+	--min: 2em;
+	--val: 5vw;
+	--max: 3em;
+	padding:10px
+	}
+	*/
+
+	/* Popup container - can be anything you want 00000 */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: initial;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+	visibility: hidden;
+	width: 200px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+
+
+  	/* Popup container - can be anything you want 11111 */
+.popup1 {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: initial;
+  }
+  
+  /* The actual popup */
+  .popup1 .popuptext1 {
+	visibility: hidden;
+	width: 100px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup1 .popuptext1::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup1 .show1 {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+
+/* Popup container - can be anything you want 22222 */
+	.popup2 {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		font-size: initial;
+	  }
+	  
+	  /* The actual popup */
+	  .popup2 .popuptext2 {
+		visibility: hidden;
+		width: 100px;
+		background-color: #555;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 8px 0;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%;
+		left: 50%;
+		margin-left: -80px;
+	  }
+	  
+	  /* Popup arrow */
+	  .popup2 .popuptext2::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #555 transparent transparent transparent;
+	  }
+	  
+	  /* Toggle this class - hide and show the popup */
+	  .popup2 .show2 {
+		visibility: visible;
+		-webkit-animation: fadeIn 1s;
+		animation: fadeIn 1s;
+	  }
+	  
+	  /* Add animation (fade in the popup) */
+	  @-webkit-keyframes fadeIn {
+		from {opacity: 0;} 
+		to {opacity: 1;}
+	  }
+	  
+	  @keyframes fadeIn {
+		from {opacity: 0;}
+		to {opacity:1 ;}
+	  }	  
+
+/* Popup container - can be anything you want 33333 */
+.popup3 {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: initial;
+  }
+  
+  /* The actual popup */
+  .popup3 .popuptext3 {
+	visibility: hidden;
+	width: 100px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup3 .popuptext3::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup3 .show3 {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+
+  /* Popup container - can be anything you want 44444 */
+.popup4 {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: initial;
+  }
+  
+  /* The actual popup */
+  .popup4 .popuptext4 {
+	visibility: hidden;
+	width: 100px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup4 .popuptext4::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup4 .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+
+  
