@@ -1,7 +1,7 @@
 // fetch data from airtable
 fetch('https://api.airtable.com/v0/app3Okb7D9jJAXdkz/Christina',{
     headers: {
-        Authorization: 'Bearer;keym515eYuin1dnCw', // API key (from Airtable account)
+        Authorization: 'Bearer keym515eYuin1dnCw', // API key (from Airtable account)
     }
 })
     .then(response => response.json()) // tells JS to expect data in json format
