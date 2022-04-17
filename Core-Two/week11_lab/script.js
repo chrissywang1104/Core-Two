@@ -22,7 +22,7 @@ fetch('https://api.airtable.com/v0/app3Okb7D9jJAXdkz/Christina',{
             // backticks `` -> allows to add HTML + JS together using ${field} in a single block of code
             albumsContainer.innerHTML += `
             <div class="christina">
-            <h5>${christina.fields.year}</h5>  
+            <h5>${christina.fields.year}</h5>
             <h3>${christina.fields.date}</h3>
             <h4>${christina.fields.emotion}</h4>
             <img src="${christina.fields.pictures[0].thumbnails.large.url}" width='200'/>
