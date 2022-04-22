@@ -1,0 +1,65 @@
+@font-face {
+	font-family:  SignifierRegular;
+	src:  url(../fonts/TestSignifier-Regular.otf);
+}
+
+@font-face {
+	font-family:  SignifierMediumItalic;
+	src:  url(../fonts/TestSignifier-MediumItalic.otf);
+}
+
+@font-face {
+	font-family:  SignifierBold;
+	src:  url(../fonts/TestSignifier-Bold.otf);
+}
+
+body {
+	background: rgb(61, 61, 61);
+
+	margin: 7%;
+
+}
+
+h1 {
+	font-family: SignifierBold;
+	text-align: center;
+	font-size: 150px;
+	color:  grey;
+
+}
+
+h2 {
+	font-family: SignifierBold;
+	text-align: center;
+	font-size: 60px;
+	color:  grey;
+
+}
+
+a:visited {
+	color: grey;
+	background-color: transparent;
+	text-decoration: none;
+  }
+
+p {
+	font-family: SignifierRegular;
+	text-align: justify;
+	word-spacing: 0px;
+}
+
+#italic {
+	font-family:  SignifierMediumItalic;
+}
+
+#bold {
+	font-family: SignifierBold;
+}
+
+body {
+	word-break: break-all;
+}
+
+span {
+	word-break: break-all;
+}

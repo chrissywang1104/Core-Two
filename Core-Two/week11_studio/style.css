@@ -1,0 +1,54 @@
+img {
+  transition:transform 0.25s ease;
+}
+
+img:hover {
+  -webkit-transform:scale(10);
+  transform:scale(2.5);
+  position: absolute;
+  z-index: 99999;
+  filter: brightness(1.25);
+  filter: drop-shadow(0 0 0.75rem black);
+  cursor: zoom-in;
+}
+
+body {
+  background-image: linear-gradient(rgba(55, 55, 55, 0.7), rgba(75, 75, 75, 0.7)), url("video.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 150%;
+  color: white;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  filter: brightness(0.5);
+  background-attachment: fixed;
+}
+
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
