@@ -106,7 +106,9 @@ span {
 	font-size: 150px; line-height: 20%;
 }
 
-
+.underline {
+	text-decoration: underline blue;
+}
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait */
