@@ -109,6 +109,7 @@ span {
 .underline {
 	text-decoration: underline blue !important;
 	border-bottom: 1px solid blue;
+	background-color: rgba(0, 0, 255, 0.3);
 }
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
