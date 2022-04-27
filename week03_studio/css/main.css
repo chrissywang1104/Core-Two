@@ -108,6 +108,7 @@ span {
 
 .underline {
 	text-decoration: underline blue !important;
+	border-bottom: 1px solid blue;
 }
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
