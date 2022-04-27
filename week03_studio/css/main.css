@@ -1,0 +1,192 @@
+@font-face {
+	font-family:  SignifierRegular;
+	src:  url(../fonts/TestSignifier-Regular.otf);
+}
+
+@font-face {
+	font-family:  SignifierMediumItalic;
+	src:  url(../fonts/TestSignifier-MediumItalic.otf);
+}
+
+@font-face {
+	font-family:  SignifierBold;
+	src:  url(../fonts/TestSignifier-Bold.otf);
+}
+
+/* @media screen and (max-width:1000px)and (min-width:700px) { */
+
+body {
+	background: rgb(255,255,255);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(65,65,65,1) 41%, rgba(18,18,18,1) 100%);
+	margin: 7%;
+
+}
+
+h1 {
+	font-family: SignifierBold;
+	text-align: center;
+	font-size: 150px;
+	color:  grey;
+
+}
+
+h2 {
+	font-family: SignifierBold;
+	text-align: center;
+	font-size: 60px;
+	color:  grey;
+
+}
+
+a:visited {
+	color: grey;
+	background-color: transparent;
+	text-decoration: none;
+  }
+
+p {
+	font-family: SignifierRegular;
+	text-align: justify;
+	word-spacing: 0px;
+}
+
+#italic {
+	font-family:  SignifierMediumItalic;
+}
+
+#bold {
+	font-family: SignifierBold;
+}
+
+body {
+	word-break: break-all;
+}
+
+span {
+	word-break: break-all;
+}
+
+.one {
+	font-size: 47px; line-height: 120%;
+}
+
+.two {
+	font-size: 60px; line-height: 100%;
+}
+
+.three {
+	font-size: 70px; line-height: 90%;
+}
+
+.four {
+	font-size: 90px; line-height: 80%;
+}
+
+.five {
+	font-size: 100px; line-height: 70%;
+}
+
+.six {
+	font-size: 110px;line-height: 60%;
+}
+
+.seven {
+	font-size: 120px; line-height: 50%;
+}
+
+.eight {
+	font-size: 130px; line-height: 40%;
+}
+
+.nine {
+	font-size: 140px; line-height: 30%;
+}
+
+.ten {
+	font-size: 150px; line-height: 20%;
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (orientation: portrait) { 
+
+	Div { position: fixed; } 
+
+}
+
+	/* Popup container - can be anything you want 00000 */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: 20px;
+	word-break: normal;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+	visibility: hidden;
+	width: 200px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }
+
+/* } */
