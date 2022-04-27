@@ -1,3 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.btn .btn-outline-light .btn-lg {
+  font-size: 250px;
+}
+
 img {
   transition:transform 0.25s ease;
 }
@@ -13,13 +29,15 @@ img:hover {
 }
 
 body {
-  background-image: linear-gradient(rgba(55, 55, 55, 0.7), rgba(75, 75, 75, 0.7)), url("video.gif");
+  /* background-image: linear-gradient(rgba(55, 55, 55, 0.7), rgba(75, 75, 75, 0.7)), url("video.gif"); */
+  background: rgb(13,0,255);
+  background: linear-gradient(0deg, rgba(13,0,255,1) 0%, rgba(69,69,255,1) 35%, rgba(53,220,254,1) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 150%;
   color: white;
 }
-
+/* 
 video {
   position: absolute;
   top: 50%;
@@ -35,8 +53,14 @@ video {
   transform: translateX(-50%) translateY(-50%);
   filter: brightness(0.5);
   background-attachment: fixed;
-}
+} */
 
+video {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
@@ -51,4 +75,40 @@ video {
   header video {
     display: none;
   }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    body {
+      background: rgb(13,0,255);
+      background: linear-gradient(0deg, rgba(13,0,255,1) 0%, rgba(69,69,255,1) 35%, rgba(53,220,254,1) 100%);
+    }
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    body {
+      background: rgb(13,0,255);
+      background: linear-gradient(0deg, rgba(13,0,255,1) 0%, rgba(69,69,255,1) 35%, rgba(53,220,254,1) 100%);
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    body {
+      background: rgb(13,0,255);
+      background: linear-gradient(0deg, rgba(13,0,255,1) 0%, rgba(69,69,255,1) 35%, rgba(53,220,254,1) 100%);
+    }
 }
