@@ -11,7 +11,7 @@
 // document.write("Child 5:" + name5 );
 
 let introduction = 'There are currently 13,687 orphans living in an orphanage in South Korea. Adoption is a legal system that helps children who do not have parents or can no longer protect them, find new parents and help them grow healthy in the family framework.';
-
+let instruction = 'Press "M" to give sunlight to the children, and "N" to give treats to the children. Drag the children to each corresponding house so they can have a secure home.'
 
 let img_sun;
 let img_cloud;
@@ -19,7 +19,7 @@ let img_cloud;
 let img_grass;
 let grass_size = 1400;
 
-let face_size = 80;
+let face_size = 90;
 
 let face_smile1;
 let face_frown1;
@@ -42,33 +42,24 @@ let face_frown5;
 let face_with_candy5;
 
 let img_house;
-let house_size = 200;
-
-let child1 = {
-    hasSun: false,
-    hasCandy: false,
-    houseInside: false,
-    clicked: false,
-    x: 320,
-    y: 220
-}
-
-let child2 = {
-    hasSun: false,
-    hasCandy: false,
-    houseInside: false,
-    clicked: false,
-    x: 470,
-    y: 220
-}
+let house_size = 220;
 
 let child3 = {
     hasSun: false,
     hasCandy: false,
     houseInside: false,
     clicked: false,
-    x: 620,
-    y: 220
+    x: 355,
+    y: 250
+}
+
+let child1 = {
+    hasSun: false,
+    hasCandy: false,
+    houseInside: false,
+    clicked: false,
+    x: 505,
+    y: 250
 }
 
 let child4 = {
@@ -76,8 +67,17 @@ let child4 = {
     hasCandy: false,
     houseInside: false,
     clicked: false,
-    x: 770,
-    y: 220
+    x: 655,
+    y: 250
+}
+
+let child2 = {
+    hasSun: false,
+    hasCandy: false,
+    houseInside: false,
+    clicked: false,
+    x: 805,
+    y: 250
 }
 
 let child5 = {
@@ -85,38 +85,38 @@ let child5 = {
     hasCandy: false,
     houseInside: false,
     clicked: false,
-    x: 920,
-    y: 220
+    x: 955,
+    y: 250
 }
 
 let house1 = {
-    x: 100,
-    y: 580
+    x: 90,
+    y: 550
 }
 
 let house2 = {
-    x: 350,
-    y: 580
+    x: 340,
+    y: 550
 }
 
 let house3 = {
-    x: 600,
-    y: 580
+    x: 590,
+    y: 550
 }
 
 let house4 = {
-    x: 850,
-    y: 580
+    x: 840,
+    y: 550
 }
 
 let house5 = {
-    x: 1100,
-    y: 580
+    x: 1090,
+    y: 550
 }
 
 let grass = {
     x: 0,
-    y: 750
+    y: -578
 }
 
 let arrayChildren = [
@@ -156,8 +156,13 @@ function preload() {
     face_frown5 = loadImage("face_frown5.png");
     face_with_candy5 = loadImage("face_with_candy5.png");
 
-    img_house = loadImage("house_with_window.png");
-    img_grass = loadImage("grass-14.png")
+    img_house1 = loadImage("house_with_window1.png");
+    img_house2 = loadImage("house_with_window2.png");
+    img_house3 = loadImage("house_with_window3.png");
+    img_house4 = loadImage("house_with_window4.png");
+    img_house5 = loadImage("house_with_window5.png");
+
+    img_grass = loadImage("grass-15.png")
     img_sun = loadImage("sun.png")
     img_cloud= loadImage("cloud.png")
 }
@@ -188,7 +193,7 @@ function draw() {
     }
 
     if (keyIsPressed === true && key == 'n') {
-        image(img_sun, -100, -100, 500, 500);
+        image(img_sun, -120, -120, 450, 450);
         child1.hasSun = true;
         child2.hasSun = true;
         child3.hasSun = true;
@@ -202,12 +207,20 @@ function draw() {
         child5.hasSun = false;
     }
 
+    // let fontHairline;
+    // function preload() {
+    //     fontHairline = loadFont('TestKarbon-Hairline.otf');
+    // }
 
-    image(img_cloud, 1000, 50, 400, 200);
+    image(img_cloud, 1000, 80, 300, 150);
     drawGrass(grass);
 
     textAlign(CENTER, TOP);
-    text(introduction, 360, 12, 700, 700);
+    textSize(16);
+    // textFont(fontHairline, 14);
+    text(introduction, 360, 20, 700, 700);
+
+    text(instruction, 360, 90, 700, 700);
 
     drawChild1(child1);
     drawChild2(child2);
@@ -215,11 +228,11 @@ function draw() {
     drawChild4(child4);
     drawChild5(child5);
 
-    drawHouse(house1);
-    drawHouse(house2);
-    drawHouse(house3);
-    drawHouse(house4);
-    drawHouse(house5);
+    drawHouse1(house1);
+    drawHouse2(house2);
+    drawHouse3(house3);
+    drawHouse4(house4);
+    drawHouse5(house5);
 
     checkInsideHouse();
 
@@ -317,8 +330,24 @@ function checkInsideChildHouse(child, house) {
 
 
 
-function drawHouse(house) {
-    image(img_house, house.x, house.y, house_size, house_size);
+function drawHouse1(house1) {
+    image(img_house1, house1.x, house1.y, house_size, house_size);
+}
+
+function drawHouse2(house2) {
+    image(img_house2, house2.x, house2.y, house_size, house_size);
+}
+
+function drawHouse3(house3) {
+    image(img_house3, house3.x, house3.y, house_size, house_size);
+}
+
+function drawHouse4(house4) {
+    image(img_house4, house4.x, house4.y, house_size, house_size);
+}
+
+function drawHouse5(house5) {
+    image(img_house5, house5.x, house5.y, house_size, house_size);
 }
 
 function drawGrass(grass) {
